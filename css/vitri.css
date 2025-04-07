@@ -118,3 +118,63 @@
 .logo a:hover {
     color: #007bff;
 }
+
+
+/* Add these styles to enhance the appearance */
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.location-details, .border-details {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.location-details li, .border-details li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.strategic-importance {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.importance-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.importance-item h4 {
+    color: #007bff;
+    margin-top: 0;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.info-section {
+    margin-bottom: 40px;
+}
+
+.info-section h3 {
+    color: #333;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    margin: 30px 0 20px;
+}
+
+@media (max-width: 768px) {
+    .strategic-importance {
+        grid-template-columns: 1fr;
+    }
+}
