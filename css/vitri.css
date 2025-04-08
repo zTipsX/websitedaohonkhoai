@@ -166,15 +166,55 @@
     margin-bottom: 40px;
 }
 
+/* Remove the blue line and gray dividers */
 .info-section h3 {
     color: #333;
-    border-left: 4px solid #007bff;
     padding-left: 15px;
     margin: 30px 0 20px;
+    border-left: none; /* Remove blue line */
+}
+
+.location-details li, .border-details li {
+    padding: 8px 0;
+    border-bottom: none; /* Remove gray dividers */
+}
+
+/* Add some spacing between items instead */
+.location-details p {
+    margin: 15px 0;
 }
 
 @media (max-width: 768px) {
     .strategic-importance {
         grid-template-columns: 1fr;
     }
+}
+
+nữa/* Update to hide red borders in light mode but keep them in dark mode */
+.map-container img,
+.sports-image img {
+    border: none;
+}
+
+body:not(.dark-mode) .map-image-container,
+body:not(.dark-mode) .image-frame,
+body:not(.dark-mode) .sports-image {
+    border: none;
+}
+
+/* Remove red borders from title */
+.red-border-title {
+    border: none; /* Removed red border */
+    padding: 15px 30px;
+    margin: 40px auto;
+    width: fit-content;
+    position: relative;
+}
+
+/* Remove red borders from boxes */
+.red-border-box {
+    border: none; /* Removed red border */
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
 }
